@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-12" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wong-Wong's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Dashboard -->
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                 <li><button onclick="showSection('home')">Home</button></li>
+                 <li><button onclick="showSection('about')">About Me</button></li>
+                 <li><button onclick="showSection('projects')">Projects</button></li>
+                <li><button onclick="showSection('contact')">Contact</button></li>
+           </ul>
+        </nav>
+
+        <!-- Main Content -->
+    <main class="main-content">
+            <section id="home">
+                <header class="home-header">
+                    <div class="text-content">
+                        <h1>Chrystvil Wong-Wong M. Baculi</h1>
+                        <p>Bachelor of Science in Computer Engineering</p>
+                    </div>
+                    <img src="wongprofile.jpg" alt="Profile Photo" class="profile-photo" />
+                </header>
+
+            <section class="intro" style="margin-top:100px">
+                <p>I’m a Computer Engineering student passionate about electronics, programming, web development, software engineering, and cybersecurity.</p>
+                <p>Welcome to my Portfolio!</p>
+            </section>
+            </section>
+
+        <section id="about" style="display:none;">
+           <h2>About Me</h2>
+        <p>
+            I’m a Computer Engineering student driven by a deep passion for both hardware and software. 
+            My journey blends electronics, embedded systems, and circuit design—exploring how devices function at 
+            their core and transforming that knowledge into practical, real-world applications.
+        </p>
+
+        <p>
+            I specialize in microcontroller programming using C, while also being proficienct in C++ and Java for software development. 
+            My skill set also includes scripting languages such as HTML, CSS, JavaScript, and SQL, which I use for building web applications and managing databases.
+            My development workflow is anchored in Visual Studio Code, where I focus on both frontend and backend engineering tasks. 
+            Aside from that, I’m also well-versed in Microsoft Office tools—Word, Excel, and PowerPoint—making me highly adaptable across technical documentation, presentations, and workflow planning.
+        </p>
+
+        <p>
+            On the hardware side, I integrate tools such as Proteus, Multisim, MPLAB, and KiCAD to support the design, simulation, 
+            and implementation of electrical circuits and embedded systems. I also use AutoCAD for drafting schematics and technical layouts, especially when precision and documentation are critical. 
+            These platforms allow me to visualize, test, and optimize my projects before deployment—ensuring both reliability and scalability.
+            I also enjoy bridging the gap between digital logic and physical systems, crafting solutions that are not only technically 
+            sound but also practical and efficient. Whether it's designing microcontroller-based applications or refining circuit layouts, I strive to create hardware that complements and enhances software functionality.
+        </p>
+
+        <p>
+            Beyond technical expertise, I’m motivated by modernizing workflows—streamlining academic, 
+            engineering, and development processes to make them more efficient and impactful. 
+            My goal is to become a well-rounded engineer capable of bridging hardware, software, and security to deliver 
+            innovative solutions that matter.
+        </p>
+        </section>
+
+        <section id="projects" style="display:none;">
+            <header>
+                <h2>Projects</h2>
+            </header>
+
+            <div>
+
+            </div>
+
+            <p> </p>
+        </section>
+
+        <section id="contact" style="display:none;">
+            <p> </p>
+        </section>
+        </main>
+    </div>
+</body>
+</html>
