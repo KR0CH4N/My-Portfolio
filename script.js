@@ -4,3 +4,9 @@ function showSection(id) {
         section.style.display = section.id === id ? 'block' : 'none';
     });
 }
+
+
+
+
+
+
