@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-12" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wong-Wong's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <!-- Sidebar Dashboard -->
-        <nav class="sidebar">
+        <nav class="topbar">
             <h2>Dashboard</h2>
             <ul>
                  <li><button onclick="showSection('home')">Home</button></li>
@@ -22,55 +22,94 @@
 
         <!-- Main Content -->
     <main class="main-content">
-            <section id="home">
-                <header class="home-header">
-                    <div class="text-content">
-                        <h1>Chrystvil Wong-Wong M. Baculi</h1>
-                        <p>Bachelor of Science in Computer Engineering</p>
-                    </div>
-                    <img src="wongprofile.jpg" alt="Profile Photo" class="profile-photo" />
-                </header>
+  <section id="home">
+    <header class="home-header">
+      <div class="text-content">
+        <h1>Chrystvil Wong-Wong M. Baculi</h1>
+        <p>Bachelor of Science in Computer Engineering</p>
 
-            <section class="intro" style="margin-top:100px">
-                <p>I’m a Computer Engineering student passionate about electronics, programming, web development, software engineering, and cybersecurity.</p>
-                <p>Welcome to my Portfolio!</p>
-            </section>
-            </section>
+        <!-- Contact Card placed directly below text-content -->
+        <div class="contact-card">
+          <div class="contact-item">
+            <span class="contact-label">📍 Location:</span>
+            <span class="contact-value">Burgos, Isabela, Philippines</span>
+          </div>
 
-        <section id="about" style="display:none;">
-           <h2>About Me</h2>
-        <p>
-            I’m a Computer Engineering student driven by a deep passion for both hardware and software. 
-            My journey blends electronics, embedded systems, and circuit design—exploring how devices function at 
-            their core and transforming that knowledge into practical, real-world applications.
-        </p>
+          <div class="contact-item">
+            <span class="contact-label">📧 Email:</span>
+            <span class="contact-value">
+              <a href="mailto:wongbaculi24@gmail.com">wongbaculi24@gmail.com</a>
+            </span>
+          </div>
 
-        <p>
-            I specialize in microcontroller programming using C, while also being proficienct in C++ and Java for software development. 
-            My skill set also includes scripting languages such as HTML, CSS, JavaScript, and SQL, which I use for building web applications and managing databases.
-            My development workflow is anchored in Visual Studio Code, where I focus on both frontend and backend engineering tasks. 
-            Aside from that, I’m also well-versed in Microsoft Office tools—Word, Excel, and PowerPoint—making me highly adaptable across technical documentation, presentations, and workflow planning.
-        </p>
+          <div class="contact-item">
+            <span class="contact-label">💻 GitHub:</span>
+            <span class="contact-value">
+              <a href="https://github.com/KR0CH4N" target="_blank">github.com/KR0CH4N</a>
+            </span>
+          </div>
+        </div>
+      </div>
 
-        <p>
-            On the hardware side, I integrate tools such as Proteus, Multisim, MPLAB, and KiCAD to support the design, simulation, 
-            and implementation of electrical circuits and embedded systems. I also use AutoCAD for drafting schematics and technical layouts, especially when precision and documentation are critical. 
-            These platforms allow me to visualize, test, and optimize my projects before deployment—ensuring both reliability and scalability.
-            I also enjoy bridging the gap between digital logic and physical systems, crafting solutions that are not only technically 
-            sound but also practical and efficient. Whether it's designing microcontroller-based applications or refining circuit layouts, I strive to create hardware that complements and enhances software functionality.
-        </p>
+      <img src="wongprofile.jpg" alt="Profile Photo" class="profile-photo" />
+    </header>
 
-        <p>
-            Beyond technical expertise, I’m motivated by modernizing workflows—streamlining academic, 
-            engineering, and development processes to make them more efficient and impactful. 
-            My goal is to become a well-rounded engineer capable of bridging hardware, software, and security to deliver 
-            innovative solutions that matter.
-        </p>
-        </section>
+    <section class="intro" style="margin-top:100px">
+      <p>Hello there! I’m a Computer Engineering student passionate about electronics, programming, web development, software engineering, and cybersecurity.</p>
+      <p>Welcome to my Portfolio!</p>
+    </section>
+  </section>
+
+
+            <section id="about" style="display:none;">
+               <header class="about-header">
+                <h2>About Me</h2>
+              </header>
+
+              <div class="about-pairs">
+                <div class="about-row">
+                  <div class="about-label">BACKGROUND</div>
+                <ul class="about-details">
+                  <li>Computer Engineering student passionate about hardware, software, and cybersecurity.</li>
+                  <li>Focused on embedded systems, web development, and ethical hacking.</li>
+                  <li>Driven by clarity, modularity, and workflow modernization.</li>
+                </ul>
+              </div>
+
+              <div class="about-row">
+                <div class="about-label">SKILLS</div>
+                  <ul class="about-details">
+                    <li>Microcontroller programming in C, C++, and Java.</li>
+                    <li>Web development with HTML, CSS, JavaScript, and SQL.</li>
+                    <li>Hardware design using Proteus, Multisim, KiCAD, AutoCAD, and MPLAB.</li>
+                    <li>Technical documentation and workflow planning with Microsoft Office.</li>
+                  </ul>
+                </div>
+
+    <div class="about-row">
+      <div class="about-label">EXPERIENCE</div>
+      <ul class="about-details">
+        <li>Built microcontroller-based automation systems using C and MPLAB.</li>
+        <li>Designed modular web dashboards with dropdowns and toggling sections.</li>
+        <li>Integrated Wi-Fi auditing tools and ethical hacking utilities into portfolio demos.</li>
+      </ul>
+    </div>
+
+    <div class="about-row">
+      <div class="about-label">EDUCATION</div>
+      <ul class="about-details">
+        <li>Burgos Central School</li>
+        <li>Burgos National High School</li>
+        <li>Aurora Senior High School</li>
+        <li>B.S. in Computer Engineering – Cagayan State University</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
         <section id="projects" style="display:none;">
             <header>
-                <h2>Projects</h2>
+                <h2>My Projects</h2>
             </header>
 
             <div>
